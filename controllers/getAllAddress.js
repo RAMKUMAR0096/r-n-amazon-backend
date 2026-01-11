@@ -16,7 +16,7 @@ async function getAllAddressController(req, res) {
 
         const address = user.addresses;
 
-        return res.staus(200).json({
+        return res.status(200).json({
             data : address,
             message : "All address of the user",
             success : true,
