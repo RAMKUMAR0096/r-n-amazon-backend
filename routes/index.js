@@ -4,6 +4,8 @@ const registerCountroller = require('../controllers/register');
 const loginController = require('../controllers/login');
 const  addAddressController = require('../controllers/addAddress');
 const getAllAddressController = require('../controllers/getAllAddress');
+const orderController = require('../controllers/order');
+const getUserDetailController = require('../controllers/getUserDetail');
 
 const router = express.Router();
 
@@ -12,6 +14,8 @@ router.get('/verify/:token',verifyEmail)
 router.post('/login',loginController)
 router.post('/add-address',addAddressController)
 router.get('/get-all-address/:userId',getAllAddressController)
+router.post('/orders',orderController)
+router.get('/profile',getUserDetailController)
 
 
 
