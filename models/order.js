@@ -35,7 +35,7 @@ const orderSchema = mongoose.Schema({
             type: String,
             required: true
         },
-        mobileNo: {
+        mobile: {
             type: Number,
             required: true
         },
@@ -51,7 +51,7 @@ const orderSchema = mongoose.Schema({
             type: String,
             required: true
         },
-        postalCode: {
+        pincode: {
             type : String,
             required : true
         }

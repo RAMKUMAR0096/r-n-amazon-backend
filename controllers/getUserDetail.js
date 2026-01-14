@@ -1,8 +1,8 @@
-const User = require('../models/order')
+const User = require('../models/user')
 
 async function getUserDetailController(req,res){
     try {
-        const {userId} =req.body;
+        const userId =req.params.userId;
 
         const user = await User.findById(userId);
         if (!user) {

@@ -75,7 +75,7 @@ async function registerCountroller(request, response) {
         })
 
     } catch (error) {
-        console.log(error);
+      
         return response.status(500).json({
             message: error || "Server error",
             success: false,
